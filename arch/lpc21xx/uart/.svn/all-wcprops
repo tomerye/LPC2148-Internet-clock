@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/75/trunk/project/src/trunk/arch/lpc21xx/uart
+END
+_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/46/trunk/project/src/trunk/arch/lpc21xx/uart/_test.c
+END
+uart0.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/75/trunk/project/src/trunk/arch/lpc21xx/uart/uart0.h
+END
+print.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/46/trunk/project/src/trunk/arch/lpc21xx/uart/print.h
+END
+uart0.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/75/trunk/project/src/trunk/arch/lpc21xx/uart/uart0.c
+END
+print.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/46/trunk/project/src/trunk/arch/lpc21xx/uart/print.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/46/trunk/project/src/trunk/arch/lpc21xx/uart/Makefile
+END

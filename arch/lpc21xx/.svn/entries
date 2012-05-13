@@ -1,0 +1,52 @@
+10
+
+dir
+138
+http://tauembedded.googlecode.com/svn/trunk/project/src/trunk/arch/lpc21xx
+http://tauembedded.googlecode.com/svn
+
+
+
+2010-02-20T19:11:10.136752Z
+97
+wieyal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c82d262a-d0f4-11de-a205-5990a31c5447
+
+enc28j60
+dir
+
+timer
+dir
+
+lcd
+dir
+
+uart
+dir
+
+clock
+dir
+
+spi_eth
+dir
+
+spi1
+dir
+
+mmc
+dir
+

@@ -1,0 +1,17 @@
+how to use this software:
+
+Dispatcher:
+download libgcal from "git://gitorious.org/libgcal/libgcal.git"
+follow the instruction and install the library
+compile the Dispatcher with "make all"
+run the dispatcher with ./Dispatcher
+
+lpc21isp:
+download and compile lpc21isp 
+
+download and compile GNU ARM toolchain
+
+configue the software parameter at configure.h (set user password etc)
+connect the LPC2148 to the computer
+configure the makefile with the toolchain and lpc21isp paths
+run "make program" to compile and burn the software on the LPC2148

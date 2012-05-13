@@ -1,0 +1,74 @@
+//#include <stdio.h>
+
+//#include "io.h"
+/*
+#include "timer.h"
+#include "uip.h"
+#include "uip_arp.h"
+#include "network.h"
+#include "lcd.h"
+#include "enc28j60.h"
+*/
+#include "uart0.h"
+
+//#include "apps/hello-world/hello-world.h"
+
+/*--------------------------- uip_log ---------------------------------*/
+
+void uip_log(char *m)
+{
+//    printf("uIP log message: %s\n", m);
+}
+
+
+/*--------------------------- main ---------------------------------*/
+
+int main(void)
+{
+
+    //unsigned int i;
+    //uip_ipaddr_t ipaddr;	/* local IP address */
+    //struct uip_eth_addr macaddr = { { 0x00, 0x04, 0x0e, 0xf8, 0xb7, 0xf6 } };
+    volatile int i;
+    uart0Init();
+    //lcdInit();
+    //lcdPrintString("Started");
+    //printf("Started\n");
+    uart0SendByte((uint8_t)'a');
+    uart0SendByte((uint8_t)'b');
+    for(i=0; i<100000; i++);
+    return 0;
+#if 0
+    // clock init
+    clock_init();
+    lcdGoto(0);
+    lcdPrintString("Clock init");
+    // printf("Clock initi\n");
+    uart0SendByte('a');
+    // ethernet init
+    network_init();
+    lcdGoto(0);
+    lcdPrintString("net Init");
+    printf("Network init\n");
+
+    // Initialize the uIP TCP/IP stack.
+    uip_init();
+
+    lcdGoto(0);
+    lcdPrintString("uip Init");
+
+
+    uip_setethaddr(macaddr);
+
+    uip_ipaddr(ipaddr, 10,0,0,250);
+    uip_sethostaddr(ipaddr);	/* host IP address */
+
+    enc28j60_get_mac_address((uint8_t *)&macaddr);
+    {
+        char buff[3] = {(char)macaddr.addr[0] , (char)macaddr.addr[1] , 0};
+        lcdPrintString(buff);
+    }
+
+    return 0;
+#endif
+}

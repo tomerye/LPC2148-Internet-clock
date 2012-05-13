@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/82/trunk/project/src/trunk/arch/lpc21xx/clock
+END
+clock-arch.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/82/trunk/project/src/trunk/arch/lpc21xx/clock/clock-arch.c
+END
+clock-arch.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/82/trunk/project/src/trunk/arch/lpc21xx/clock/clock-arch.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/46/trunk/project/src/trunk/arch/lpc21xx/clock/Makefile
+END

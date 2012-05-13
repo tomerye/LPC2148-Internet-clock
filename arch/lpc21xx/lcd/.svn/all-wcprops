@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/97/trunk/project/src/trunk/arch/lpc21xx/lcd
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/46/trunk/project/src/trunk/arch/lpc21xx/lcd/Makefile
+END
+lcd.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/97/trunk/project/src/trunk/arch/lpc21xx/lcd/lcd.c
+END
+lcd.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/97/trunk/project/src/trunk/arch/lpc21xx/lcd/lcd.h
+END

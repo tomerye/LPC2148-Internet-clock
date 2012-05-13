@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/109/trunk/project/src/trunk/apps/sdserver
+END
+http-strings.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/http-strings.c
+END
+httpd-cgi.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/httpd-cgi.h
+END
+httpd-fsdata.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/httpd-fsdata.h
+END
+httpd.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/httpd.h
+END
+webserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/webserver.h
+END
+httpd-fs.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/httpd-fs.c
+END
+http-strings.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/http-strings.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/Makefile
+END
+httpd-fs.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/httpd-fs.h
+END
+httpd-cgi.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/httpd-cgi.c
+END
+httpd-fsdata.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/87/trunk/project/src/trunk/apps/sdserver/httpd-fsdata.c
+END
+httpd.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/109/trunk/project/src/trunk/apps/sdserver/httpd.c
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/93/trunk/project/src/trunk/arch/lpc21xx/spi1
+END
+spi1.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/93/trunk/project/src/trunk/arch/lpc21xx/spi1/spi1.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/63/trunk/project/src/trunk/arch/lpc21xx/spi1/Makefile
+END
+spi1.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/69/trunk/project/src/trunk/arch/lpc21xx/spi1/spi1.h
+END

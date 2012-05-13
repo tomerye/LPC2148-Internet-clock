@@ -1,0 +1,51 @@
+
+ifdef APPS
+  APPDIRS = $(foreach APP, $(APPS), ../apps/$(APP))
+  -include $(foreach APP, $(APPS), ../apps/$(APP)/Makefile.$(APP))
+  # Adds -I../apps/APP1 -I../apps/APP2 and so on to CFLAGS
+  CFLAGS += $(addprefix -I../apps/,$(APPS))
+endif
+
+ifndef CCDEP
+  CCDEP = $(CC)
+endif
+ifndef CCDEPCFLAGS
+  CCDEPCFLAGS = $(CFLAGS)
+endif
+ifndef OBJECTDIR
+  OBJECTDIR = obj
+endif
+
+ifeq (${wildcard $(OBJECTDIR)},)
+  DUMMY := ${shell mkdir $(OBJECTDIR)}
+endif
+
+# Search for .c files in ../uip ../lib and APPDIRS
+vpath %.c . ../uip ../lib $(APPDIRS)
+
+$(OBJECTDIR)/%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Generate a file of prerequisites called $(OBJECTDIR)/%.d from %c files
+$(OBJECTDIR)/%.d: %.c
+	@set -e; rm -f $@; \
+	$(CCDEP) -MM $(CCDEPCFLAGS) $< > $@.$$$$; \
+	sed 's,\($*\)\.o[ :]*,$(OBJECTDIR)/\1.o $@ : ,g' < $@.$$$$ > $@; \
+	rm -f $@.$$$$
+
+UIP_SOURCES=uip.c uip_arp.c uiplib.c psock.c timer.c uip-neighbor.c
+
+# When make target is not 'clean'
+# So make won't create .d files only to immediately remove them again
+ifneq ($(MAKECMDGOALS),clean)
+-include $(addprefix $(OBJECTDIR)/,$(UIP_SOURCES:.c=.d) \
+                                   $(APP_SOURCES:.c=.d))
+endif
+
+uip.a: ${addprefix $(OBJECTDIR)/, $(UIP_SOURCES:.c=.o)}
+	$(AR) rcf $@ $^
+
+apps.a: ${addprefix $(OBJECTDIR)/, $(APP_SOURCES:.c=.o)}
+	$(AR) rcf $@ $^
+
+
